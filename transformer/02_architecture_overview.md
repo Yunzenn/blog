@@ -50,12 +50,6 @@ Transformer由两部分组成：
 - **Encoder**：N=6层，每层包含两个子层
 - **Decoder**：N=6层，每层包含三个子层
 
-<thinking>
-用户要求图要适配PC和手机端。我应该用Mermaid图来绘制架构，因为Mermaid图是文本格式，可以自适应屏幕大小。
-
-让我用Mermaid绘制Transformer的整体架构。
-</thinking>
-
 ### Transformer架构图（简化版）
 
 ```mermaid
@@ -284,14 +278,10 @@ V &= Z W^V \quad \text{(来自Encoder)} \\
 
 ### 完整的前向传播流程
 
-<thinking>
-我需要用Mermaid绘制一个更详细的数据流图，展示从输入到输出的完整流程。
-</thinking>
-
 ```mermaid
 graph LR
     subgraph Input["输入阶段"]
-        I1["输入序列<br/>x₁, x₂, ..., xₙ"]
+        I1["输入序列<br/>x1, x2, ..., xn"]
         I2["Embedding"]
         I3["+ 位置编码"]
         I1 --> I2 --> I3
@@ -313,11 +303,11 @@ graph LR
     subgraph Output["输出阶段"]
         O1["Linear"]
         O2["Softmax"]
-        O3["输出概率<br/>P(y₁), P(y₂), ..."]
+        O3["输出概率<br/>P(y1), P(y2), ..."]
         D3 --> O1 --> O2 --> O3
     end
     
-    E2 ==>|"Encoder输出<br/>z₁, z₂, ..., zₙ"| D2
+    E2 ==>|"Encoder输出<br/>z1, z2, ..., zn"| D2
     
     style E1 fill:#e1f5ff
     style D1 fill:#ffe1e1

@@ -15,17 +15,6 @@ $$\text{FFN}(x) = \max(0, xW_1 + b_1)W_2 + b_2$$
 
 但MoE（Mixture of Experts）的核心思想是：**不是所有神经元都需要参与每次计算**。
 
-<thinking>
-我需要先给出前置知识，然后对比标准FFN和MoE，再深入讲解DeepSeek V3的细粒度MoE设计。
-
-前置知识应该包括：
-1. 稀疏激活的概念
-2. 专家（Expert）的定义
-3. 路由（Router）的作用
-
-然后我需要画图对比标准FFN和MoE的数据流。图要简洁，适配PC和手机。我应该使用TB（从上到下）的布局，因为这样在手机上更容易阅读。
-</thinking>
-
 ## 前置知识补给站
 
 ### 1. 稀疏激活（Sparse Activation）
