@@ -62,6 +62,11 @@
 
 ## 三种架构的数据流对比
 
+![Diagram 1](https://mermaid.ink/img/Z3JhcGggVEIKICAgIHN1YmdyYXBoIEVEWyJFbmNvZGVyLURlY29kZXIgKOWOn-iuuuaWhykiXQogICAgICAgIEVEMVsi6L6T5YWl5bqP5YiXPGJyLz7mupDor63oqIAiXQogICAgICAgIEVEMlsiRW5jb2Rlcjxici8-5Y-M5ZCRU2VsZi1BdHRlbnRpb24iXQogICAgICAgIEVEM1si5LiK5LiL5paH6KGo56S6Il0KICAgICAgICBFRDRbIkRlY29kZXI8YnIvPk1hc2tlZCBTZWxmLUF0dGVudGlvbjxici8-KyBDcm9zcy1BdHRlbnRpb24iXQogICAgICAgIEVENVsi6L6T5Ye65bqP5YiXPGJyLz7nm67moIfor63oqIAiXQogICAgICAgIAogICAgICAgIEVEMSAtLT4gRUQyCiAgICAgICAgRUQyIC0tPiBFRDMKICAgICAgICBFRDMgLS0-IEVENAogICAgICAgIEVENCAtLT4gRUQ1CiAgICBlbmQKICAgIAogICAgc3ViZ3JhcGggRU9bIkVuY29kZXItb25seSAoQkVSVCkiXQogICAgICAgIEVPMVsi6L6T5YWl5bqP5YiXPGJyLz5bTUFTS13moIforrAiXQogICAgICAgIEVPMlsiRW5jb2Rlcjxici8-5Y-M5ZCRU2VsZi1BdHRlbnRpb24iXQogICAgICAgIEVPM1si6aKE5rWLW01BU0tdIl0KICAgICAgICAKICAgICAgICBFTzEgLS0-IEVPMgogICAgICAgIEVPMiAtLT4gRU8zCiAgICBlbmQKICAgIAogICAgc3ViZ3JhcGggRE9bIkRlY29kZXItb25seSAoR1BUKSJdCiAgICAgICAgRE8xWyLovpPlhaXluo_liJc8YnIvPuWJjee8gCAoVGhlIGNhdCBzYXQgb24gdGhlKSJdCiAgICAgICAgRE8yWyJEZWNvZGVyPGJyLz5NYXNrZWQgU2VsZi1BdHRlbnRpb24iXQogICAgICAgIERPM1si6aKE5rWL5LiL5LiA5LiqdG9rZW48YnIvPihjYXQsIHNhdCwgb24sIHRoZSwgbWF0KSJdCiAgICAgICAgCiAgICAgICAgRE8xIC0tPiBETzIKICAgICAgICBETzIgLS0-IERPMwogICAgICAgIERPMiAtLi0-fCLoh6rlm57lvZLlvqrnjq8ifCBETzEKICAgIGVuZAogICAgCiAgICBzdHlsZSBFRDIgZmlsbDojZTFmNWZmCiAgICBzdHlsZSBFRDQgZmlsbDojZmZmNGUxCiAgICBzdHlsZSBFTzIgZmlsbDojZTFmNWZmCiAgICBzdHlsZSBETzIgZmlsbDojZmZmNGUx)
+
+<details>
+<summary>查看Mermaid源码</summary>
+
 ```mermaid
 graph TB
     subgraph ED["Encoder-Decoder (原论文)"]
@@ -101,6 +106,7 @@ graph TB
     style EO2 fill:#e1f5ff
     style DO2 fill:#fff4e1
 ```
+</details>
 
 ## 为什么Decoder-only在通用语言建模中胜出？
 
@@ -244,6 +250,11 @@ Decoder-only把所有参数都用在生成上，没有"浪费"在编码上。
 
 ## 各大模型的架构选择
 
+![Diagram 2](https://mermaid.ink/img/Z3JhcGggVEIKICAgIHN1YmdyYXBoIFRhc2tbIuS7u-WKoeexu-WeiyJdCiAgICAgICAgVDFbIumAmueUqOivreiogOW7uuaooTxici8-5a-56K-d44CB5Luj56CB55Sf5oiQIl0KICAgICAgICBUMlsi5py65Zmo57-76K-RPGJyLz7or63pn7Por4bliKsiXQogICAgICAgIFQzWyLlpJrmqKHmgIE8YnIvPuinhuiniS3or63oqIAiXQogICAgZW5kCiAgICAKICAgIHN1YmdyYXBoIEFyY2hbIuaetuaehOmAieaLqSJdCiAgICAgICAgQTFbIkRlY29kZXItb25seTxici8-R1BU44CBQ2xhdWRl44CBR2VtaW5pIl0KICAgICAgICBBMlsiRW5jb2Rlci1EZWNvZGVyPGJyLz5UcmFuc2Zvcm1lcuOAgVQ1Il0KICAgICAgICBBM1siRW5jb2Rlci1EZWNvZGVyPGJyLz5XaGlzcGVy44CBRmxhbWluZ28iXQogICAgZW5kCiAgICAKICAgIFQxIC0tPiBBMQogICAgVDIgLS0-IEEyCiAgICBUMyAtLT4gQTMKICAgIAogICAgc3R5bGUgQTEgZmlsbDojZmZmNGUxCiAgICBzdHlsZSBBMiBmaWxsOiNlMWY1ZmYKICAgIHN0eWxlIEEzIGZpbGw6I2UxZjVmZg==)
+
+<details>
+<summary>查看Mermaid源码</summary>
+
 ```mermaid
 graph TB
     subgraph Task["任务类型"]
@@ -266,6 +277,7 @@ graph TB
     style A2 fill:#e1f5ff
     style A3 fill:#e1f5ff
 ```
+</details>
 
 | 模型 | 架构 | 参数量 | 为什么选择这个架构 |
 |:-----|:-----|:-------|:-------------------|

@@ -221,6 +221,11 @@ Multi-Head Attention类似于集成学习中的"多个弱学习器"。
 
 ## Multi-Head Attention的完整计算流程
 
+![Diagram 1](https://mermaid.ink/img/Z3JhcGggVEIKICAgIElucHV0WyLovpPlhaUgWCAobsOXZF9tb2RlbCkiXQogICAgCiAgICBzdWJncmFwaCAi5bm26KGM6K6h566XIGgg5LiqIGhlYWQiCiAgICAgICAgSDFbIkhlYWQgMTxici8-UeKCgT1YV-KCgV5RLCBL4oKBPVhX4oKBXkssIFbigoE9WFfigoFeVjxici8-QXR0ZW50aW9uKFHigoEsS-KCgSxW4oKBKSJdCiAgICAgICAgSDJbIkhlYWQgMjxici8-UeKCgj1YV-KCgl5RLCBL4oKCPVhX4oKCXkssIFbigoI9WFfigoJeVjxici8-QXR0ZW50aW9uKFHigoIsS-KCgixW4oKCKSJdCiAgICAgICAgSDNbIi4uLiJdCiAgICAgICAgSDhbIkhlYWQgaDxici8-UeKClT1YV-KClV5RLCBL4oKVPVhX4oKVXkssIFbigpU9WFfigpVeVjxici8-QXR0ZW50aW9uKFHigpUsS-KClSxW4oKVKSJdCiAgICBlbmQKICAgIAogICAgQ29uY2F0WyLmi7zmjqU8YnIvPkNvbmNhdChoZWFk4oKBLCAuLi4sIGhlYWTigpUpPGJyLz4obsOXaGRfdikiXQogICAgCiAgICBQcm9qZWN0WyLovpPlh7rmipXlvbE8YnIvPsOXV15PPGJyLz4obsOXZF9tb2RlbCkiXQogICAgCiAgICBPdXRwdXRbIui-k-WHuiAobsOXZF9tb2RlbCkiXQogICAgCiAgICBJbnB1dCAtLT4gSDEKICAgIElucHV0IC0tPiBIMgogICAgSW5wdXQgLS0-IEgzCiAgICBJbnB1dCAtLT4gSDgKICAgIAogICAgSDEgLS0-IENvbmNhdAogICAgSDIgLS0-IENvbmNhdAogICAgSDMgLS0-IENvbmNhdAogICAgSDggLS0-IENvbmNhdAogICAgCiAgICBDb25jYXQgLS0-IFByb2plY3QKICAgIFByb2plY3QgLS0-IE91dHB1dAogICAgCiAgICBzdHlsZSBIMSBmaWxsOiNlMWY1ZmYKICAgIHN0eWxlIEgyIGZpbGw6I2UxZjVmZgogICAgc3R5bGUgSDggZmlsbDojZTFmNWZmCiAgICBzdHlsZSBDb25jYXQgZmlsbDojZmZmNGUx)
+
+<details>
+<summary>查看Mermaid源码</summary>
+
 ```mermaid
 graph TB
     Input["输入 X (n×d_model)"]
@@ -256,6 +261,7 @@ graph TB
     style H8 fill:#e1f5ff
     style Concat fill:#fff4e1
 ```
+</details>
 
 **关键步骤**：
 1. **并行投影**：每个head独立计算$QW_i^Q, KW_i^K, VW_i^V$

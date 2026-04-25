@@ -53,6 +53,11 @@ $$y = x + \text{Sublayer}(\text{LayerNorm}(x))$$
 
 ## 长文本优化方案对比
 
+![Diagram 1](https://mermaid.ink/img/Z3JhcGggVEIKICAgIHN1YmdyYXBoIFByb2JsZW1bIumVv-aWh-acrOeTtumiiCJdCiAgICAgICAgUDFbIkF0dGVudGlvbuWkjeadguW6pjxici8-TyhuwrIpIl0KICAgICAgICBQMlsiS1YgQ2FjaGXlhoXlrZg8YnIvPk8obsK3ZCkiXQogICAgICAgIFAzWyLkv6Hmga_mtYHoobDlh488YnIvPua3seWxgue9kee7nCJdCiAgICBlbmQKICAgIAogICAgc3ViZ3JhcGggU29sdXRpb25zWyLkvJjljJbmlrnmoYgiXQogICAgICAgIFMxWyJTcGFyc2UgQXR0ZW50aW9uPGJyLz7pmY3kvY7lpI3mnYLluqYiXQogICAgICAgIFMyWyJTbGlkaW5nIFdpbmRvdzxici8-6ZmQ5Yi256qX5Y-jIl0KICAgICAgICBTM1siUmluZyBBdHRlbnRpb248YnIvPuWIhuW4g-W8j-iuoeeulyJdCiAgICAgICAgUzRbIkF0dGVudGlvbiBSZXNpZHVhbHM8YnIvPuS8mOWMluS_oeaBr-a1gSJdCiAgICBlbmQKICAgIAogICAgUDEgLS0-IFMxCiAgICBQMSAtLT4gUzIKICAgIFAyIC0tPiBTMwogICAgUDMgLS0-IFM0CiAgICAKICAgIHN0eWxlIFM0IGZpbGw6I2ZmZjRlMQ==)
+
+<details>
+<summary>查看Mermaid源码</summary>
+
 ```mermaid
 graph TB
     subgraph Problem["长文本瓶颈"]
@@ -75,6 +80,7 @@ graph TB
     
     style S4 fill:#fff4e1
 ```
+</details>
 
 | 方案 | 核心思想 | 代表模型 | 复杂度 | 优点 | 缺点 |
 |:-----|:---------|:---------|:-------|:-----|:-----|

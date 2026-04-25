@@ -230,6 +230,11 @@ $$\text{score}(q, k) = v^T \tanh(W_q q + W_k k)$$
 
 ## 完整的Scaled Dot-Product Attention流程
 
+![Diagram 1](https://mermaid.ink/img/Z3JhcGggVEIKICAgIFFbIlF1ZXJ5IChuw5dkX2spIl0KICAgIEtbIktleSAobcOXZF9rKSJdCiAgICBWWyJWYWx1ZSAobcOXZF92KSJdCiAgICAKICAgIFEgLS0-IE1hdE11bDFbIuefqemYteS5mOazlTxici8-UUteVCJdCiAgICBLIC0tPiBNYXRNdWwxCiAgICAKICAgIE1hdE11bDEgLS0-IFNjYWxlWyLpmaTku6XiiJpkX2s8YnIvPuW9kuS4gOWMluaWueW3riJdCiAgICAKICAgIFNjYWxlIC0tPiBNYXNrWyLlj6_pgInvvJrliqBNYXNrPGJyLz4oRGVjb2RlcueUqCkiXQogICAgCiAgICBNYXNrIC0tPiBTb2Z0bWF4WyJTb2Z0bWF4PGJyLz7lvZLkuIDljJbkuLrmpoLnjociXQogICAgCiAgICBTb2Z0bWF4IC0tPiBNYXRNdWwyWyLnn6npmLXkuZjms5U8YnIvPuWKoOadg-axguWSjCJdCiAgICBWIC0tPiBNYXRNdWwyCiAgICAKICAgIE1hdE11bDIgLS0-IE91dHB1dFsi6L6T5Ye6IChuw5dkX3YpIl0KICAgIAogICAgc3R5bGUgU2NhbGUgZmlsbDojZmZmNGUxCiAgICBzdHlsZSBTb2Z0bWF4IGZpbGw6I2UxZjVmZg==)
+
+<details>
+<summary>查看Mermaid源码</summary>
+
 ```mermaid
 graph TB
     Q["Query (n×d_k)"]
@@ -253,6 +258,7 @@ graph TB
     style Scale fill:#fff4e1
     style Softmax fill:#e1f5ff
 ```
+</details>
 
 **关键步骤**：
 1. **计算相似度**：$QK^T$，得到$n \times m$的score矩阵

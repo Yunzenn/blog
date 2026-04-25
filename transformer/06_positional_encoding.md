@@ -200,6 +200,11 @@ $$q_m^{(i)} = q^{(i)} e^{im\theta}, \quad k_n^{(i)} = k^{(i)} e^{in\theta}$$
 
 ## 位置编码的可视化
 
+![Diagram 1](https://mermaid.ink/img/Z3JhcGggTFIKICAgIHN1YmdyYXBoICLkuI3lkIznu7TluqbnmoTms6Lplb8iCiAgICAgICAgRDBbIue7tOW6pjA8YnIvPs67PTLPgDxici8-6auY6aKRIl0KICAgICAgICBEMVsi57u05bqmMTxici8-zrs9Ms-Aw5cxMF4wLjU8YnIvPuS4remikSJdCiAgICAgICAgRDJbIue7tOW6pjI8YnIvPs67PTLPgMOXMTBeMTxici8-5L2O6aKRIl0KICAgICAgICBEM1siLi4uPGJyLz4uLi4iXQogICAgICAgIERuWyLnu7TluqYyNTU8YnIvPs67PTLPgMOXMTAwMDA8YnIvPuaegeS9jumikSJdCiAgICBlbmQKICAgIAogICAgc3ViZ3JhcGggIuS9jee9rue8lueggeefqemYtSIKICAgICAgICBQRVsiUEVbcG9zLCBkaW1dPGJyLz5wb3M6IOW6j-WIl-S9jee9rjxici8-ZGltOiDnibnlvoHnu7TluqYiXQogICAgZW5kCiAgICAKICAgIEQwIC0tPiBQRQogICAgRDEgLS0-IFBFCiAgICBEMiAtLT4gUEUKICAgIEQzIC0tPiBQRQogICAgRG4gLS0-IFBFCiAgICAKICAgIHN0eWxlIEQwIGZpbGw6I2ZmZTFlMQogICAgc3R5bGUgRG4gZmlsbDojZTFlMWZm)
+
+<details>
+<summary>查看Mermaid源码</summary>
+
 ```mermaid
 graph LR
     subgraph "不同维度的波长"
@@ -223,6 +228,7 @@ graph LR
     style D0 fill:#ffe1e1
     style Dn fill:#e1e1ff
 ```
+</details>
 
 **直观理解**：
 - 每个维度是一个不同频率的正弦波

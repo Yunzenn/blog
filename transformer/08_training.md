@@ -146,6 +146,11 @@ lrate_{peak} &= 512^{-0.5} \cdot 4000^{-0.5} \\
 
 ### 学习率曲线可视化
 
+![Diagram 1](https://mermaid.ink/img/Z3JhcGggTFIKICAgIHN1YmdyYXBoICLlrabkuaDnjofosIPluqYiCiAgICAgICAgQVsiU3RlcCAwPGJyLz5scj0wIl0KICAgICAgICBCWyJTdGVwIDQwMDA8YnIvPmxyPTfDlzEw4oG74oG0PGJyLz4o5bOw5YC8KSJdCiAgICAgICAgQ1siU3RlcCA4MDAwPGJyLz5scuKJiDXDlzEw4oG74oG0Il0KICAgICAgICBEWyJTdGVwIDEwMDAwMDxici8-bHLiiYgyw5cxMOKBu-KBtCJdCiAgICBlbmQKICAgIAogICAgQSAtLT58Iue6v-aAp-WinumVvzxici8-KFdhcm11cCkifCBCCiAgICBCIC0tPnwiMS_iiJpzdGVw6KGw5YePInwgQwogICAgQyAtLT58IuaMgee7reihsOWHjyJ8IEQKICAgIAogICAgc3R5bGUgQiBmaWxsOiNmZmY0ZTE=)
+
+<details>
+<summary>查看Mermaid源码</summary>
+
 ```mermaid
 graph LR
     subgraph "学习率调度"
@@ -161,6 +166,7 @@ graph LR
     
     style B fill:#fff4e1
 ```
+</details>
 
 ## Label Smoothing：让模型"不那么自信"
 
